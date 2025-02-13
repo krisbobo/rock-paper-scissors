@@ -1,3 +1,7 @@
+let humanScore = 0;
+let computerScore = 0;
+
+
 function getComputerChoice() {
   let decision = Math.floor(Math.random() * 3); //let your computer randomly generate numbers 0, 1, 2.
   const rock = 'Rock';
