@@ -5,15 +5,19 @@ function getComputerChoice() {
   const rock = 'Rock';
   const paper = 'Paper';
   const scissors = 'Scissors';
-  if (decision === 0) {
-    return rock.toLowerCase();
+  switch (decision) {
+    case 0:
+      rock.toLowerCase();
+      break;
+    case 1:
+      paper.toLowerCase();
+      break;
+    case 2:
+      scissors.toLowerCase();
+    default:
+      break;
   }
-  if (decision === 1) {
-    return paper.toLowerCase();
-  }
-  if (decision === 2) {
-    return scissors.toLowerCase();
-  }
+  return decision;
 }
 
 function getHumanChoice() {
