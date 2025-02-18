@@ -2,22 +2,19 @@ playGame();
 
 function getComputerChoice() {
   let decision = Math.floor(Math.random() * 3); //let your computer randomly generate numbers 0, 1, 2.
-  const rock = 'Rock';
-  const paper = 'Paper';
-  const scissors = 'Scissors';
+  let compDecision = '';
   switch (decision) {
     case 0:
-      rock.toLowerCase();
+      compDecision = 'Rock';
       break;
     case 1:
-      paper.toLowerCase();
+      compDecision = 'Paper';
       break;
     case 2:
-      scissors.toLowerCase();
-    default:
+      compDecision = 'Scissors';
       break;
   }
-  return decision;
+  return compDecision.toLowerCase();
 }
 
 function getHumanChoice() {
