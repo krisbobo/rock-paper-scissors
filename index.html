@@ -4,8 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock | Paper | Scissors</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    #container {
+      border: 1px solid grey;
+      padding: 5rem;
+      width: 30%;
+      margin: 10% auto;
+    }
+    button {
+      padding: 8px;
+      background: lightseagreen;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 2px 4px;
+    }
+    button:hover {
+      background: grey;
+    }
+    p {
+      padding: 1px 3px;
+    }
+    .result {
+      border: 1px solid grey;
+      margin: 4px;
+    }
+  </style>
 </head>
 <body>
+  <h1>Rock Paper Scissors Game</h1>
+  <div id="container">
+    <div class="result">
+      <p id="runningScore"></p>
+      <p id="score"></p>
+    </div>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+    <button id="refresh">Play Again</button>
+  </div>
+
   <script src="./script.js"></script>
 </body>
 </html>
