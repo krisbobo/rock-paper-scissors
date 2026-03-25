@@ -1,7 +1,8 @@
 # rock-paper-scissors
 
-For this project, I created the Rock, Paper, Scissors game to be played entirely in the console.
+A simple implementation of the classic rock-paper-scissors game in JavaScript. The game allows a player and the computer to compete against each other, keeping track of their scores and determining the winner.
 
 ## Features
 
-Basic console game built with JavaScript. Subsequent update of UI.
+- Running score and winner view
+- Reset game option
